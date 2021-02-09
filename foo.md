@@ -40,3 +40,8 @@ original sources.
 
 Stylesheets are available under the MIT license, see the file
 [`COPYING`](COPYING) for details.
+
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+![GitHub Logo](./sheep.jpg)
