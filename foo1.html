@@ -634,15 +634,27 @@ border-color: #4078c0;
   <![endif]-->
 </head>
 <body>
+<h1 id="workflow">Workflow</h1>
+<p>Write however you would like in Markdown. You can see it live compiled in the VSCode preview.</p>
+<p>Note how images can be inserted both from a HTML request or locally.</p>
+<p>Using Pandoc to convert the MD file into a self-contained HTML file. The great advantage is you could take it to-go and be hosted on any web server you would like (e.g., university department). The CL templeate is below.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">pandoc</span> <span class="va">$title</span>.md <span class="kw">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>       <span class="ex">--output</span>=<span class="va">$title</span>.html <span class="kw">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>       <span class="ex">--to</span>=html5 <span class="kw">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>       <span class="ex">--css</span>=./github.css <span class="kw">\</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>       <span class="ex">--highlight-style</span>=kate <span class="kw">\</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>       <span class="ex">--self-contained</span></span></code></pre></div>
+<p>The generated HTML can be opened and viewed locally by any Browser. Whever you are happy with it, just do the regular Git add/commit/push workflow to Github. The html file can then be servred via https://zchen43.github.io/$title.html</p>
+<p>It seems like Github could compile raw markdown as well!</p>
 <h1 id="markdown-css">Markdown CSS</h1>
 <p>This is a collection of stylesheets to use when converting Markdown text to HTML format. Stylesheets have been tested to work with Pandoc, but might also work with other converters that output fairly plain HTML.</p>
 <p>To use one of the stylesheets, just unpack somewhere convenient, e.g. <code>~/.local/share/markdown-css</code> and then do something like</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">pandoc</span> foo.md <span class="kw">\</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>       <span class="ex">--output</span>=foo.html <span class="kw">\</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>       <span class="ex">--to</span>=html5 <span class="kw">\</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>       <span class="ex">--css</span>=<span class="va">$HOME</span>/.local/share/markdown-css/tufte.css <span class="kw">\</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>       <span class="ex">--highlight-style</span>=haddock <span class="kw">\</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>       <span class="ex">--self-contained</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">pandoc</span> foo.md <span class="kw">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>       <span class="ex">--output</span>=foo.html <span class="kw">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>       <span class="ex">--to</span>=html5 <span class="kw">\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>       <span class="ex">--css</span>=<span class="va">$HOME</span>/.local/share/markdown-css/tufte.css <span class="kw">\</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>       <span class="ex">--highlight-style</span>=haddock <span class="kw">\</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>       <span class="ex">--self-contained</span></span></code></pre></div>
 <p><strong>Preview:</strong> <a href="https://otsaloma.io/pub/markdown-css-github.html">github</a> <a href="https://otsaloma.io/pub/markdown-css-tufte.html">tufte</a></p>
 <p>Included stylesheets originate from other projects, and have merely been adapted to work with Markdown and Pandoc, and also styles of some elements have been tweaked to suit the authors’ use cases and personal taste. Original files have been kept in the repository to be able to review the changes and to merge changes in from upstream. Anyone looking for a base for their own work is likely to be better off turning to the original sources.</p>
 <ul>

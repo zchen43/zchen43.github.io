@@ -1,10 +1,10 @@
-Workflow
-============
+# Workflow
+
 Write however you would like in Markdown.
 You can see it live compiled in the VSCode preview.
 
 Note how images can be inserted both from a HTML request or 
-locally. 
+locally.
 
 Using Pandoc to convert the MD file into a self-contained HTML
 file. The great advantage is you could take it to-go and be hosted on any web server you would like (e.g., university department). The CL templeate is below.
@@ -21,8 +21,6 @@ pandoc $title.md \
 The generated HTML can be opened and viewed locally by any Browser. Whever you are happy with it, just do the regular Git add/commit/push workflow to Github. The html file can then be servred via https://zchen43.github.io/$title.html
 
 It seems like Github could compile raw markdown as well!
-
-
 
 Markdown CSS
 ============
