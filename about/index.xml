@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>about on Zihan Chen | Climate Scientist in training</title>
+    <title>about on Zihan Chen</title>
     <link>https://zchen43.github.io/about/</link>
-    <description>Recent content in about on Zihan Chen | Climate Scientist in training</description>
+    <description>Recent content in about on Zihan Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Oct 2021 17:51:47 +0330</lastBuildDate><atom:link href="https://zchen43.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 17:51:47 +0330</lastBuildDate><atom:link href="https://zchen43.github.io/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
